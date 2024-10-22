@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Slick CSS */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.nav-active {
+    color: #009ce6;
+    background-color: #e0f7fa2f;
+    border-radius: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo-color {
+    color: #009ce6;
 }
+
+.decoration-primary {
+    text-decoration-color: #009ce6;
+}
+
+.max-content {
+    max-width: max-content;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 0;
+    color: rgb(2, 2, 2);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
